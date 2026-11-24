@@ -1,0 +1,20 @@
+[package]
+name = "sidebox"
+version = "1.0.0"
+edition = "2024"
+
+[[bin]]
+name = "Sidebox"
+path = "src/main.rs"
+
+[dependencies]
+apple-codesign-quick = "=0.1.0"
+idevice = { version = "=0.1.68", default-features = false, features = ["ring", "tcp", "afc", "installation_proxy", "misagent", "heartbeat"] }
+isideload = { version = "=0.5.2", default-features = false, features = ["fs-storage", "tokio-mt", "install"] }
+plist = "1.10"
+rootcause = "0.12"
+rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "sync", "time"] }
+zeroize = "1.9"

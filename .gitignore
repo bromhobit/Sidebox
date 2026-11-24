@@ -1,0 +1,33 @@
+# Local build outputs and Python cache
+target/
+**/target/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+out/
+dist/
+build/
+work/
+*.log
+.DS_Store
+# iOS artifacts, device identities and private provisioning material
+*.ipa
+*.deb
+*.mobileprovision
+*.mobiledevicepairing
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.crt
+*.pfx
+*.sqlite
+*.db
+*pairing*.plist
+apple-session.plist
+anisette_state
+.env
+.env.*
